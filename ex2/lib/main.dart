@@ -27,10 +27,10 @@ class _Navigator_screenState extends State<Navigator_screen> {
   int selectIndex =0; 
   static const TextStyle optionStyle =  TextStyle(fontSize: 30, fontWeight: FontWeight.bold); 
   static const List<Widget> _widgetOptions = <Widget>[   
-    TelaHome(),
-    Agriculture(),
-    Health(),
-    Economy()
+    Brazil(),
+    Germany(),
+    Japan(),
+    Russia()
     
     
   ];
@@ -50,22 +50,22 @@ class _Navigator_screenState extends State<Navigator_screen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.build_sharp),
-            label: 'Industria',
-            backgroundColor: Colors.grey,
+            label: 'Brasil',
+            backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.nature),
-            label: 'Agricultura',
-            backgroundColor: Colors.greenAccent,
+            label: 'Alemanha',
+            backgroundColor: Colors.black,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.healing),
-            label: 'Saude',
-            backgroundColor: Colors.redAccent,
+            label: 'Japão',
+            backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.attach_money),
-            label: 'Economia',
+            label: 'Russia',
             backgroundColor: Colors.blueAccent,
           ),
         ],
@@ -77,8 +77,8 @@ class _Navigator_screenState extends State<Navigator_screen> {
   }
 }
 
-class TelaHome extends StatelessWidget {
-  const TelaHome({super.key});
+class Brazil extends StatelessWidget {
+  const Brazil({super.key});
  static const TextStyle styletext =  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
@@ -88,15 +88,16 @@ class TelaHome extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Center(child: Text("Industria",style: styletext)),
+          Center(child: Text("Feijoada",style: styletext)),
+          Center(child: Image.network("https://static.vecteezy.com/system/resources/previews/021/217/554/non_2x/purple-bean-feijoada-png.png"),)
         ],
       ),
     );
   }
 }
 
-class Agriculture extends StatelessWidget {
-  const Agriculture({super.key});
+class Germany extends StatelessWidget {
+  const Germany({super.key});
  static const TextStyle styletext =  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
@@ -106,15 +107,16 @@ class Agriculture extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Center(child: Text("Agriculura",style: styletext)),
+          Center(child: Text("Brezel",style: styletext)),
+          Center(child: Image.network("https://images.vexels.com/media/users/3/153909/isolated/preview/0f1ad6cac5ee05d1cb88d1e5cd470164-ilustracao-de-pretzel-macio.png"),)
         ],
       ),
     );
   }
 }
 
-class Health extends StatelessWidget {
-  const Health({super.key});
+class Japan extends StatelessWidget {
+  const Japan({super.key});
  static const TextStyle styletext =  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
@@ -124,14 +126,15 @@ class Health extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Center(child: Text("Saude",style: styletext)),
+          Center(child: Text("Sashimi",style: styletext)),
+          Center(child: Image.network("https://static.vecteezy.com/system/resources/previews/026/773/814/non_2x/sashimi-with-ai-generated-free-png.png"),)
         ],
       ),
     );
   }
 }
-class Economy extends StatelessWidget {
-  const Economy({super.key});
+class Russia extends StatelessWidget {
+  const Russia({super.key});
  static const TextStyle styletext =  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
@@ -141,7 +144,8 @@ class Economy extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Center(child: Text("Economia",style: styletext)),
+          Center(child: Text("Borscht",style: styletext)),
+          Center(child: Image.network("https://static.vecteezy.com/system/resources/previews/029/091/562/original/ukrainian-national-food-borscht-3d-render-icon-png.png")),
         ],
       ),
     );
